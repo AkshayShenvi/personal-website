@@ -1,0 +1,35 @@
+body{
+    background-color: #fcf9ec;
+    align-self: center;
+    
+}
+h1{
+    
+    font-family: "Snell Roundhand", Times, serif;
+    color: #12d3cf;
+
+}
+h3{
+    font-family: "Brush Script MT", Times, serif;
+    color: #12d3cf;
+}
+h2{
+    color: #67eaca;
+}
+hr{
+    border-style: none;
+    
+    
+    width: 3%;
+    align-self: center;
+    border-top: 6px dotted;
+    border-color: gray;
+}
+img{
+    border-radius: 50%;
+}
+div{
+    align-self: center;
+    
+    text-align: center;
+}
