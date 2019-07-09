@@ -1,35 +1,50 @@
 body{
-    background-color: #fcf9ec;
-    align-self: center;
+    margin: 0;
+    text-align: center;
     
+    font-family: 'Indie Flower', cursive;
 }
 h1{
-    
-    font-family: "Snell Roundhand", Times, serif;
-    color: #12d3cf;
+    font-size: 70px;    
+    width: 30%;
+    margin:0 auto 0 auto;
+    font-family: cursive,Arial;
 
 }
-h3{
-    font-family: "Brush Script MT", Times, serif;
-    color: #12d3cf;
-}
 h2{
-    color: #67eaca;
+    font-family: 'Shadows Into Light', cursive;
 }
-hr{
-    border-style: none;
-    
-    
-    width: 3%;
-    align-self: center;
-    border-top: 6px dotted;
-    border-color: gray;
-}
-img{
-    border-radius: 50%;
+h3{
+    font-family: 'Shadows Into Light', cursive;
 }
 div{
-    align-self: center;
     
-    text-align: center;
+}
+table{
+    margin-left:auto; 
+    margin-right:auto;
+}
+.top-container{
+    background-color: #fcf9ec;
+
+}
+.middle-container{
+    background-color: #ffffff;
+}
+.bottom-container{
+    background-color: #fcf9ec;
+}
+#firstcloud{
+    position: relative;
+    padding-top: 20px;
+    left:300px;
+}
+#secondcloud{
+    position: relative;
+    
+    bottom:300px;
+}
+#mountain{
+    position: relative;
+    
 }
