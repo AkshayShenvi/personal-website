@@ -18,8 +18,13 @@ h2{
 h3{
     font-family: 'Shadows Into Light', cursive;
 }
-div{
+hr{
     
+    border-style: none;
+    border-top-style: dotted;
+    border-color: gray;
+    border-width: 6px;
+    width: 6%;
 }
 p{
     
@@ -71,6 +76,7 @@ table{
     height: 15%;
     float: left;
     margin-right: 10px;
+    
 }
 #first-skill-image{
     margin-top: 100px;
@@ -80,4 +86,13 @@ table{
     border-radius: 50%;
     width:15%;
     height: 15%;
+}
+.projects{
+    width: 70%;
+    margin:75px auto 75px auto;
+}
+.social-media{
+    float: bottom;
+    
+
 }
