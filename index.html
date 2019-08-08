@@ -1,164 +1,305 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='utf-8'>
+
+<head>
+  <meta charset="utf-8">
+  <title>Akshay Shenvi</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/523997439b.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  
+  <section id="title">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" >
+
+      <a class="navbar-brand" href="">Akshay Shenvi</a>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Download</a>
+          </li>
+        </ul>
+  
+      </div>
+    
+    </nav>
+
+      
+
+
+      <div class="container-fluid">
+      <!-- Title -->
+        <div class="row title">
+          
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <h1>Know more about</h1>
+            <!-- <button type="button" class="btn btn-outline-light"><i class="fas fa-file-download">Download</i></button> -->
+            <button type="button" class="btn btn-outline-light">Download Resume</button>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <img src="images/Signature.png" alt="profile-photo" >
+          </div>
         
-        <title>Akshay Shenvi</title>
-        
-        <link rel='stylesheet' href='css/styles.css'>
-        <link rel='icon' href="webicon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Shadows+Into+Light&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script>
-            google.charts.load('current', {packages: ['corechart', 'bar']});
-            google.charts.setOnLoadCallback(drawBasic);
+      </div>
+    </div>
+  </section>
 
-            function drawBasic() {
-                var data = google.visualization.arrayToDataTable([
-                // ['Element', 'Density', { role: 'style' }],
-                ['Programming Language', 'Level'],
-                        ['Python', 5],
-                        ['Java', 3],
-                        ['C#', 3],
-                        ['C++', 2],
-                        ['JavaScript', 5],
-                        ['HTML', 5],
-                        ['CSS', 5],
-                        ['SQL', 4],
-                        ['Hadoop', 3],
-                        ['Node.js', 4],
-                        ['React.js', 4],
-                        ['Android Studio', 4],// CSS-style declaration
-                ]);
-                
+  <!-- Summary
+  <section id="Summary">
+    <h3>Summary:</h3>
+    <p>A meticulous, detail oriented Full Stack Software Engineer, excellent at juggling multiple tasks & working under pressure. A result oriented creative thinker with the ability to learn new technologies & concepts quickly. I am looking to work with an organization where I can learn & grow professionally, to seek mutual benefit, in the fields of Artificial Intelligence,
+       Data Science & Analytics & end-to-end Software Development</p>
+  </section> -->
 
-                var options = {
-                    title: 'All Languages that I know',
-                    chartArea:{width:'80%'},
-                    hAxis: {
-                    title: 'Programming Language',
-                   
-                    },
-                    vAxis: {
-                    title: 'Level   '
-                    }
-                };
 
-                var chart = new google.visualization.ColumnChart(
-                    document.getElementById('chart_div'));
-                    
-                chart.draw(data, options);
-                }
-           
-                    
+  
 
-                    
-        </script>
-        
-    </head>
-    <body>
-        <div class="top-container">
-            <img id="firstcloud" src="images/cloud.png" alt="cloud" height="250px" >
-            <h1>I'm Akshay</h1>
-            <p id="top-font"><strong>A programmer</strong></p>
-            <img id="secondcloud" src="images/cloud.png" alt="cloud"  height="250px">
-            <img id="mountain" src="images/mountain.png" alt="cloud" height="350px">
-        </div>
-        <div class="middle-container">
-            <div class="profile">
-                <img class="profile-pict"src="images/profilePic.jpg" alt="Profile Picture" >
-                <h2>Hello.</h2>
-                <p>I am a programmer and a student at the University of Texas at Arlington</p>
+
+
+  <!-- Technical Skills -->
+
+  <section id="technical-skills">
+    <div class='row'>
+
+      <div class="col-lg-4 col-md-12 col-sm-12 skill-box">
+        <img src="images/coding.png" alt="techincal-skills" height="100px" width="100px" class="image">
+        <h3>Programming</h3>
+        <p>Check out all my skills here.</p>
+      </div>
+    
+      <div class="col-lg-4 col-md-12 col-sm-12 skill-box" >
+        <img src="images/scripting-language.png" alt="techincal-skills" height="100px" width="100px" class="image">
+        <h3>Scripting Languages</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 skill-box">
+        <img src="images/database.png" alt="techincal-skills" height="100px" width="100px" class="image">
+        <h3>Database</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 skill-box">
+        <img src="images/cloud.png" alt="techincal-skills" height="100px" width="100px" class="image">
+        <h3>Frameworks</h3>
+        <p>Check out all my skills here.</p>
+      </div>
+    
+      <div class="col-lg-4 col-md-12 col-sm-12 skill-box" >
+        <img src="images/algorithm.png" alt="techincal-skills" height="100px" width="100px" class="image">
+        <h3>Algorithms</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12 skill-box">
+        <img src="images/open-book.png" alt="techincal-skills" height="100px" width="100px" class="image">
+        <h3>Education background.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+
+  <section id="projects">
+      <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <!-- 1'st Entry -->
+            <div class="carousel-item active" data-interval="10000" data-pause="hover" data-ride="true">
+              <a href="https://github.com/AkshayShenvi/chatbot"></a>
+                <h2>Chatbot using NLP</h2>
+                <p class="project-para">(Feb 2019- March 2019)</p>
+                <img class="project-image" src="images/chatbot.jpg" alt="chatbot">
+                <p><em>Designed, built, trained & tested the Seq2Seq model by implementing a chatbot with data from movie dialogs.
+                    Pre-Processed the data, built the Seq2Seq model using TensorFlow (RNN) libraries, trained the seq2seq model by changing the hyperparameters.</em></p>
+              </a>
             </div>
-            <hr>
-            <div class="skills">
-                <h2 >My Technical Skills.</h2>
-                <div class="skill-row">
-                    <h3 class="green">Programming</h3>
-                    <img id="first-skill-image" class="skill-images" src="images/design.png" alt="computer" >
-                    <div >
-                    <p>My top 5 languages:</p>
-                    <table>
-                        <tr>
-                            <td><img class="" src="images/python.png" alt="computer" height="50px" width="50px"></td>
-                            <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
-                        </tr>
-                        <tr>
-                                <td><img class="" src="images/java.png" alt="computer" height="50px" width="50px"></td>
-                                <td>&#9733;&#9733;&#9733;&#x2606;&#x2606;</td>
-                            </tr>
-                            <tr>
-                                <td><img class="" src="images/Csharp.png" alt="computer" height="50px" width="50px"></td>
-                                <td>&#9733;&#9733;&#9733;&#x2606;&#x2606;</td>
-                            </tr>
-                            <tr>
-                                <td><img class="" src="images/C++.png" alt="computer" height="50px" width="50px"></td>
-                                <td>&#9733;&#9733;&#x2606;&#x2606;&#x2606;</td>
-                            </tr>
-                            <tr>
-                                <td><img class="" src="images/javascript.jpg" alt="computer" height="50px" width="50px"></td>
-                                <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
-                            </tr>
-                    </table>
+            
+            
+            <!-- 2'nd Entry -->
+            <div class="carousel-item" data-interval="10000" data-pause="hover" data-ride="true">
+              <a>
+                <h2>Pet Store Website</h2>
+                <p class="project-para">(Aug 2018 – Dec 2018)</p>
+                <img class="project-image" src="images/pet-store.jpg" alt="Petstore">
+                <p><em>A complete front-end & back-end website with Client & service forms connected to a database stored on the cloud. For building the 
+                  front-end I used Html5, CSS3 & Bootstrap & Node.js as a package manager, JavaScript & Php for server side & MySQL as the database.</em></p>
+              </a>
+            </div>
+            
+            <!-- 3'rd Entry -->
+            <div class="carousel-item" data-interval="10000" data-pause="hover" data-ride="true">
+              <a href="https://github.com/AkshayShenvi/SocialMediaSentimentAnalysis">
+                <h2>Social Media Sentiment Analysis Using Hadoop</h2>
+                <p class="project-para">(Sept 2015- May 2016)</p>
+                <img class="project-image" src="images/sentiment-analysis.jpg" alt="twitter-Sentiment-Analysis">
+                <p><em>Designing & Building a system where live twitter feed can be segregated as positive, negative & neutral feed. I used Apache Flume 
+                  for data ingestion & Hive as query interface to query out data from HDFS.</em></p>
+              </a>
+            </div>
+
+            <!-- 4'th Entry -->
+            <div class="carousel-item" data-interval="10000" data-pause="hover" data-ride="true">
+              <a href="https://github.com/AkshayShenvi/smart-brain-face-detection">
+                  <h2>Smart-brain Website</h2>
+                  <p class="project-para">(Sept 2015- May 2016)</p>
+                  <img class="project-image" src="images/smart-brain.jpg" alt="Face Detection Website">
+                  <p><em>Created & developed a website with a database online storing login credentials using Noje.js & React for front-end,
+                    PostgreSQL as the database. Used a Face Detection API for detecting the faces in Images.</em></p>
+              <a>
+            </div>
+          
+          
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+      </div>
+
+    <!-- <h2>Chatbot using NLP</h2>
+    <p class="project-para">(Feb 2019- March 2019)</p>
+    <img class="project-image" src="images/chatbot.jpg" alt="chatbot">
+    <p><em>Designed, built, trained & tested the Seq2Seq model by implementing a chatbot with data from movie dialogs.
+        Pre-Processed the data, built the Seq2Seq model using TensorFlow (RNN) libraries, trained the seq2seq model by changing the hyperparameters.</em></p> -->
+
+    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+    <em>Beverly, Illinois</em> -->
+
+  </section>
+
+  <!-- Education -->
+
+  <section id="education">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Grad School</h5>
+                  <img src="images/UTA.png" height="150px" width="150px">
+                  <p class="card-text">University Of texas at Arlington.</p>
+                  <a href="https://www.uta.edu/uta/" class="btn btn-primary">UTA Website</a>
+              </div>
+
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Under-Grad School</h5>
+                    <img src="images/TCET.jpg" height="150px" width="150px">
+                    <p class="card-text">Thakur College of Engineering And Technology</p>
+                    <a href="https://www.tcetmumbai.in/" class="btn btn-primary">TCET Website</a>
+                </div>
+  
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Junior College</h5>
+                      <img src="images/tvm.jpg  " height="150px" width="150px">
+                      <p class="card-text">Thakur Vidya Mandir High School & Junior College</p>
+                      <a href="http://www.tvmmumbai.in/" class="btn btn-primary">TVM Website</a>
+                  </div>
+    
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">High School</h5>
+                        <img src="images/SFDHS.png " height="150px" width="150px">
+                        <p class="card-text">St. Francis High School</p>
+                        <a href="https://en.wikipedia.org/wiki/Saint_Francis_D%27Assisi_High_School" class="btn btn-primary">SFDHS Website</a>
                     </div>
-                    <!-- <div id="chart_div"></div> -->
+      
                 </div>
-                <div class="skill-row">
-                    <h3 class="green">Data Science Algorithms</h3>
-                    <img class="skill-images" src="images/analytics.png" alt="" >
-                
-                <!-- <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-                 -->
-                    <table>
-                        <tr>
-                            <td><strong>Classification</strong></td>
-                            <td>Logistic Regression, K-NN, SVM, Naïve Bayes, Decision Tree, Random Forrest</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Regression</strong></td>
-                            <td>Linear, Decision Tree, Random Forest</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Clustering</strong></td>
-                            <td>K-means, Hierarchical</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Deep Learning</strong></td>
-                            <td>CNN, RNN</td>
-                        </tr>
-                        
-                    </table>
-                </div>
-            </div>
-            <hr>
-            <div class="projects">
-                <h2 >Projects</h2>
-                <h3 class="green">Chatbot using NLP (Feb 2019- March 2019)</h3>
-                <p>Designed, built, trained & tested the Seq2Seq model by implementing a chatbot with data from movie dialogs.
-                        Pre-Processed the data, built the Seq2Seq model using TensorFlow (RNN) libraries, trained the seq2seq model by changing the hyperparameters.</p>
-                <h3 class="green">Pet Store Website (Aug 2018 – Dec 2018)</h3>
-                <p>A complete front-end & back-end website with Client & service forms connected to a database stored on the cloud. For building the front-end I used Html5, CSS3 & Bootstrap & Node.js as a package manager, JavaScript & Php for server side & MySQL as the database.</p>
-                <h3 class="green">Social Media Sentiment Analysis Using Hadoop (Sept 2015- May 2016)</h3>
-                <p>Designing & Building a system where live twitter feed can be segregated as positive, negative & neutral feed. I used Apache Flume for data ingestion & Hive as query interface to query out data from HDFS.</p>
-                <h3 class="green">Smart-brain Website (Sept 2015- May 2016)</h3>
-                <p>Created & developed a website with a database online storing login credentials using Noje.js & React for front-end, PostgreSQL as the database. Used a Face Detection API for detecting the faces in Images.</p>
-                <h3 class="green">Content-Based Recommender System (Ongoing)</h3>
-                <p>Created a (movie) recommender system which will compute pairwise similarity scores for all movies based on their plot descriptions and recommend movies based on that similarity score. I have used TF-IDF and cosine similarity score to determine the similarity score of the movies and thus recommend movies based on the cosine similarity score.</p>
-                
-            </div>
-            </div>
-            
-            
-            <div class="bottom-container">
-            <a class="btn" href="mailto:akshayshenvi@gmail.com">MAIL ME</a>
-            <div class="social-media">
-                <a class="footer-link" href="https://www.linkedin.com/in/akshay-shenvi/"><img src="images/linkedin.png" alt="facebook" height="30px" width="30px"></a>
-                <a class="footer-link" href="https://www.facebook.com/akshay.shenvi.9"><img src="images/facebook.png" alt="facebook" height="30px" width="30px"></a>
-                <a class="footer-link" href="https://github.com/AkshayShenvi"><img src="images/GitHub-Mark-32px.png" alt="facebook" height="30px" width="30px"></a>
-            </div>
-            <p class="green">© 2019 Akshay Shenvi.</p>
-        </div>
-              
-        
-    </body>
+              </div>
+  
+      </div>
+  
+      <!-- <h2>A Plan for Every Dog's Needs</h2>
+      <p>Simple and affordable price plans for your and your dog.</p>
+  
+  
+      <h3>Chihuahua</h3>
+      <h2>Free</h2>
+      <p>5 Matches Per Day</p>
+      <p>10 Messages Per Day</p>
+      <p>Unlimited App Usage</p>
+      <button type="button">Sign Up</button>
+  
+  
+      <h3>Labrador</h3>
+      <h2>$49 / mo</h2>
+      <p>Unlimited Matches</p>
+      <p>Unlimited Messages</p>
+      <p>Unlimited App Usage</p>
+      <button type="button">Sign Up</button>
+  
+  
+      <h3>Mastiff</h3>
+      <h2>$99 / mo</h2>
+      <p>Pirority Listing</p>
+      <p>Unlimited Matches</p>
+      <p>Unlimited Messages</p>
+      <p>Unlimited App Usage</p>
+      <button type="button">Sign Up</button> -->
+  
+    </section>
+
+
+  
+
+
+  
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3>Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button">Download</button>
+    <button type="button">Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <p>© Copyright 2018 TinDog</p>
+
+  </footer>
+
+
+</body>
+
 </html>
