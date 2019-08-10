@@ -37,13 +37,15 @@ p{
     background-image: url(../images/background.gif);
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-bottom: 1.5%;
+    padding-bottom: 1%;
+    
     
 }
 
 .title{
-    padding: 20% 15% ;
-    
+    padding: 16% 15% 20% 15% ;
+    margin-bottom: 5%;  
+    margin-top: 0%;  
     
 }
 
@@ -52,6 +54,9 @@ p{
 
 
 /* Navigation Bar */
+.navbar{
+    background: #0E1120;
+}
 .nav-item{
     padding: 0 18px;
     
@@ -108,4 +113,14 @@ p{
 /* Summary */
 #summary{
     background-color:#ffffff; 
+}
+
+/* Footer */
+#footer{
+    color: #ffffff;
+    background-color: #0E1120;
+    padding: 16% 15% 20% 15% ; 
+}
+.footer-link{
+    background-color: #ffffff;
 }
