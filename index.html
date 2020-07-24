@@ -7,10 +7,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/523997439b.js"></script>
+  
+  
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -55,12 +53,15 @@
         <div class="row title">
           
           <div class="col-lg-6 col-md-12 col-sm-12">
-            <h1>Know more about</h1>
+            <img src="images/Signature.png" alt="profile-photo" >
+            
             <!-- <button type="button" class="btn btn-outline-light"><i class="fas fa-file-download">Download</i></button> -->
-            <button type="button" class="btn btn-outline-light" ><a href="documents/CompleteResume.pdf" download>Download Resume</a></button>
+            <button type="button" class="btn btn-outline-light" ><a href="documents/Resume.pdf" download>Download Resume</a></button>
           </div>
           <div class="col-lg-6 col-md-12 col-sm-12">
-            <img src="images/Signature.png" alt="profile-photo" >
+            <div id="container">
+            <div id="text"></div><div id="cursor"></div>
+            </div>
           </div>
         
       </div>
@@ -85,13 +86,15 @@
           <img src="images/coding.png" alt="techincal-skills" height="100px" width="100px" class="image">
           <h3>Programming</h3>
           <p>Languages I am comfortable with.</p>
-          <p><button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#programming"  aria-expanded="true" aria-controls="programming" >
+          <div id="donutchart" style="width: 300px; height: 300px;"></div>
+          <!-- <p><button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#programming"  aria-expanded="true" aria-controls="programming" >
             <span data-toggle="tooltip" data-placement="bottom" title="Click Here for more Programming languages">
             Programming Languages
             </span>
-          </button></p>
+          </button></p> -->
         </div>
-        <div class="collapse" id="programming" data-parent="#skills">
+        
+        <!-- <div class="collapse" id="programming" data-parent="#skills">
             <div class="card card-body">
               <ul>
                 <li>Python</li>
@@ -103,7 +106,7 @@
                 
               </ul>  
             </div>
-          </div>
+          </div> -->
       </div>
     
       <div class="col-lg-4 col-md-12 col-sm-12 skill-box" >
@@ -367,34 +370,7 @@
   
       </div>
   
-      <!-- <h2>A Plan for Every Dog's Needs</h2>
-      <p>Simple and affordable price plans for your and your dog.</p>
-  
-  
-      <h3>Chihuahua</h3>
-      <h2>Free</h2>
-      <p>5 Matches Per Day</p>
-      <p>10 Messages Per Day</p>
-      <p>Unlimited App Usage</p>
-      <button type="button">Sign Up</button>
-  
-  
-      <h3>Labrador</h3>
-      <h2>$49 / mo</h2>
-      <p>Unlimited Matches</p>
-      <p>Unlimited Messages</p>
-      <p>Unlimited App Usage</p>
-      <button type="button">Sign Up</button>
-  
-  
-      <h3>Mastiff</h3>
-      <h2>$99 / mo</h2>
-      <p>Pirority Listing</p>
-      <p>Unlimited Matches</p>
-      <p>Unlimited Messages</p>
-      <p>Unlimited App Usage</p>
-      <button type="button">Sign Up</button> -->
-  
+      
     </section>
 
   <!-- Footer -->
@@ -413,8 +389,35 @@
     
 
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/523997439b.js"></script>
+  <script src="js/typing_effect.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
 
+        var options = {
+          title: 'My Daily Activities',
+          pieHole: 0.6,
+          chartArea: {width: 300, height: 300}
+        };
 
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
 </body>
 
 </html>
